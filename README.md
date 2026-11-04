@@ -17,23 +17,15 @@
 - 🛠️ Enjoy working on booking platforms, smart IoT dashboards & secure web systems
 - 👥 Open to internships, freelance projects, and collaboration
 
-<div align="left">
-  <img src="https://komarev.com/ghpvc/?username=athanhneee&style=flat&color=brightgreen" alt="Profile views" />
-</div>
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=athanhneee&label=PROFILE+VIEWS&color=2ea043&style=for-the-badge" alt="Profile views" />
+</p>
 
-<br />
-
-<div align="left">
-  <a href="mailto:athanhnee@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335.svg?style=flat&logo=Gmail&logoColor=white" alt="Gmail" />
-  </a>
-  <a href="https://minhthanhvilla.com" target="_blank">
-    <img src="https://img.shields.io/badge/Website-minhthanhvilla.com-2563EB.svg?style=flat&logo=googlechrome&logoColor=white" alt="Website" />
-  </a>
-  <a href="https://github.com/athanhneee" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-athanhneee-181717.svg?style=flat&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-</div>
+<p align="left">
+  <a href="mailto:athanhnee@gmail.com"><img src="./assets/badge-gmail.svg" height="32" alt="Gmail" /></a>&nbsp;
+  <a href="https://minhthanhvilla.com"><img src="./assets/badge-website.svg" height="32" alt="Website" /></a>&nbsp;
+  <a href="https://github.com/athanhneee"><img src="./assets/badge-github.svg" height="32" alt="GitHub" /></a>
+</p>
 
 <br clear="both" />
 
@@ -42,7 +34,7 @@
 <div align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=athanhneee&theme=github_dark" alt="Profile Details" />
   <br />
-  <img height="168" src="https://github-readme-stats-salesp07.vercel.app/api?username=athanhneee&show_icons=true&include_all_commits=true&bg_color=0d1117&title_color=ffffff&icon_color=40c463&text_color=c9d1d9&ring_color=40c463&border_color=2e343b&border_radius=5" alt="athanhneee's GitHub Stats" />
+  <img height="168" src="https://github-readme-stats-salesp07.vercel.app/api?username=athanhneee&show_icons=true&bg_color=0d1117&title_color=ffffff&icon_color=40c463&text_color=c9d1d9&ring_color=40c463&border_color=2e343b&border_radius=5" alt="athanhneee's GitHub Stats" />
   <img height="168" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=athanhneee&theme=github_dark&utcOffset=7" alt="Productive Time" />
   <br />
   <img width="346" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=athanhneee&theme=github_dark" alt="Top Languages by Repo" />
