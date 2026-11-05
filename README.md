@@ -12,7 +12,7 @@
 <img align="right" alt="Coding" width="290" src="./assets/coding.svg" />
 
 - 👨‍💻 Building modern Full-Stack Web applications that solve real problems
-- 🎓 Information Technology Student at **PTIT HCMC**
+- 🎓 Information Technology Student at **PTIT Ho Chi Minh**
 - 📖 Focused on **TypeScript, React, Node.js**, and clean software architecture
 - 🛠️ Enjoy working on booking platforms, smart IoT dashboards & secure web systems
 - 👥 Open to internships, freelance projects, and collaboration
