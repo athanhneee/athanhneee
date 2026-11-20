@@ -32,13 +32,13 @@
 ---
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=athanhneee&theme=github_dark" alt="Profile Details" />
+  <img src="./profile-summary-card-output/github_dark/0-profile-details.svg" alt="Profile Details" />
   <br />
   <img height="168" src="https://github-readme-stats-salesp07.vercel.app/api?username=athanhneee&show_icons=true&bg_color=0d1117&title_color=ffffff&icon_color=40c463&text_color=c9d1d9&ring_color=40c463&border_color=2e343b&border_radius=5" alt="athanhneee's GitHub Stats" />
-  <img height="168" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=athanhneee&theme=github_dark&utcOffset=7" alt="Productive Time" />
+  <img height="168" src="./profile-summary-card-output/github_dark/4-productive-time.svg" alt="Productive Time" />
   <br />
-  <img width="346" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=athanhneee&theme=github_dark" alt="Top Languages by Repo" />
-  <img width="346" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=athanhneee&theme=github_dark" alt="Top Languages by Commit" />
+  <img width="346" src="./profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Top Languages by Repo" />
+  <img width="346" src="./profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Top Languages by Commit" />
 
   <p align="center">
     <img src="https://github-trophies.vercel.app/?username=athanhneee&theme=onedark&row=1&column=6&title=MultiLanguage,Repositories,Stars,Commits,Followers,PullRequest&margin-w=10" alt="GitHub Trophies" />
