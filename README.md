@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://github.com/athanhneee">
-    <img src="https://readme-typing-svg.demolab.com?font=Roboto,sans-serif&size=34&pause=1000&color=40C463&center=true&vCenter=true&random=false&width=1000&lines=%F0%9F%92%BB+Welcome+to+My+GitHub+Universe!;%F0%9F%9A%80+Full-Stack+Developer+%7C+TypeScript+%26+React+%26+Node.js;%E2%9C%A8+Crafting+Clean+Code%2C+Building+Real-World+Web+Apps" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Roboto,sans-serif&size=34&pause=1000&color=40C463&center=true&vCenter=true&random=false&width=1000&lines=%F0%9F%92%BB+Welcome+to+My+GitHub+Universe!;%F0%9F%9A%80+Full-Stack+Developer+%7C+Go%2C+TypeScript+%26+Next.js;%E2%9C%A8+Crafting+Clean+Code%2C+Building+Real-World+Web+Apps" alt="Typing SVG" />
   </a>
 </p>
 
@@ -13,7 +13,7 @@
 
 - 👨‍💻 Building modern Full-Stack Web applications that solve real problems
 - 🎓 Information Technology Student at **PTIT Ho Chi Minh**
-- 📖 Focused on **TypeScript, React, Node.js**, and clean software architecture
+- 📖 Focused on **Go, TypeScript, React, Next.js, Node.js**, and clean software architecture
 - 🛠️ Enjoy working on booking platforms, smart IoT dashboards & secure web systems
 - 👥 Open to internships, freelance projects, and collaboration
 

@@ -1,0 +1,69 @@
+name: GitHub-Profile-Summary-Cards
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC (07:00 UTC+7)
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check SUMMARY_GITHUB_TOKEN secret
+        id: check_token
+        env:
+          TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+        run: |
+          if [ -n "$TOKEN" ]; then
+            echo "has_token=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_token=false" >> "$GITHUB_OUTPUT"
+            echo "SUMMARY_GITHUB_TOKEN secret is not set yet. Add a PAT with private repo read access in Settings -> Secrets and variables -> Actions to include private repos (e.g. Go) in summary cards."
+          fi
+
+      - name: Checkout repository
+        if: steps.check_token.outputs.has_token == 'true'
+        uses: actions/checkout@v4
+
+      - name: Generate profile summary cards (including private repos)
+        if: steps.check_token.outputs.has_token == 'true'
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: "main"
+          UTC_OFFSET: 7
+          THEME: "github_dark"
+          AUTO_PUSH: false
+
+      - name: Point README cards to generated SVGs and push
+        if: steps.check_token.outputs.has_token == 'true'
+        run: |
+          if [ -f "profile-summary-card-output/github_dark/1-repos-per-language.svg" ]; then
+            node -e '
+              const fs = require("fs");
+              let md = fs.readFileSync("README.md", "utf8");
+              md = md
+                .replace("https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=athanhneee&theme=github_dark", "./profile-summary-card-output/github_dark/0-profile-details.svg")
+                .replace("https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=athanhneee&theme=github_dark&utcOffset=7", "./profile-summary-card-output/github_dark/4-productive-time.svg")
+                .replace("https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=athanhneee&theme=github_dark", "./profile-summary-card-output/github_dark/1-repos-per-language.svg")
+                .replace("https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=athanhneee&theme=github_dark", "./profile-summary-card-output/github_dark/2-most-commit-language.svg");
+              fs.writeFileSync("README.md", md, "utf8");
+            '
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-summary-card-output README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh GitHub profile summary cards"
+            git push origin HEAD:main
+          else
+            echo "No changes to commit."
+          fi
